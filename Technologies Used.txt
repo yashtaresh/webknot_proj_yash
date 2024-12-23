@@ -1,0 +1,80 @@
+Technologies Used
+
+1. Frontend Frameworks & Libraries
+React 18
+React is a popular JavaScript library for building user interfaces. In this project, React is used to create the dynamic, component-based user interface for managing events, attendees, and tasks. React 18 enhances performance with automatic batching, server-side rendering, and other optimizations.
+
+TypeScript
+TypeScript is a superset of JavaScript that provides static typing. It is used in this project to enhance type safety and prevent potential errors during development by ensuring that the code adheres to defined types.
+
+React Router DOM
+React Router is used for routing within the React application, enabling users to navigate between different pages (such as event management, attendee management, and task tracking) without reloading the page.
+
+2. Development Tools
+
+Vite
+Vite is a fast build tool and development server that improves the development experience. It offers faster hot module replacement (HMR) and is used to bundle the project efficiently for production.
+
+ESLint
+ESLint is a static code analysis tool used to identify problematic patterns in JavaScript or TypeScript code. It helps ensure code quality and consistency across the project.
+
+3. Styling & UI Components
+
+Tailwind CSS
+Tailwind CSS is a utility-first CSS framework that enables developers to quickly design responsive, customizable UIs without writing custom CSS. It is used for styling the event dashboard, making the interface responsive and user-friendly on both desktop and mobile devices.
+
+Lucide React
+Lucide React is a lightweight icon library that provides SVG icons. It is used to add icons to the UI for visual cues like adding tasks, managing events, and displaying notifications.
+
+4. State Management & Data Persistence
+
+React Hooks
+React hooks (such as useState, useEffect) are used for managing component state and side effects in the application. useState manages state variables like active tabs and event details, while useEffect is used for handling lifecycle events like data fetching.
+
+Browser's localStorage API
+The localStorage API is used for persistent storage of data in the browser, ensuring that information like event progress and task status remains intact even when the user refreshes the page or reopens the application.
+
+Custom Storage Utility Module
+A custom utility module is created to manage interactions with the localStorage API, providing an abstraction layer for saving and retrieving application data.
+
+5. Date Handling
+
+date-fns
+date-fns is a lightweight date manipulation library that allows for easy handling of dates. It is used in the project to manage event dates, task deadlines, and format date-related information in a consistent way.
+
+6. User Experience
+
+react-hot-toast
+react-hot-toast is a lightweight and easy-to-use notification library for React. It is used to display success, error, or information messages to users in response to actions like adding or updating events, tasks, and attendees.
+
+7. Backend Integration & Database
+
+Supabase
+Supabase is an open-source backend-as-a-service (BaaS) platform that provides real-time databases, authentication, and APIs. It is used in this project to handle backend operations such as event creation, attendee management, task tracking, and storing data in a PostgreSQL database.
+Supabase Auth: Manages user authentication for secure access to the dashboard.
+Supabase Database: Stores and retrieves event, task, and attendee data via RESTful APIs.
+
+8. Type Safety
+
+TypeScript Interfaces and Types
+TypeScript is used to define strict types and interfaces, ensuring that the data structures used for events, tasks, and attendees are validated at compile-time. This reduces the chance of runtime errors and ensures consistency across the codebase.
+
+9. Code Organization
+
+Component-based Architecture
+The project is organized into reusable components that encapsulate specific functionality. Each component (e.g., EventCard, TaskList, etc.) is responsible for a part of the UI, improving maintainability and scalability.
+
+Modular File Structure
+The file structure is organized in a modular way, with separate directories for components, utilities, types, and services. This allows for easier navigation and management of the codebase.
+
+Separation of Concerns
+The project follows the principle of separating concerns, ensuring that each module has a distinct responsibility. For instance, API calls, component rendering, and state management are handled separately.
+
+Key Features Implemented
+Event Management: Users can create, update, delete, and view events with details such as name, description, date, location, and attendees.
+Attendee Management: Users can view a list of attendees, add or remove attendees, and assign them to events or tasks.
+Task Management: Tasks related to events are tracked, and users can mark tasks as completed or pending. Progress is visually displayed.
+Responsive Design: The UI adapts to different screen sizes, providing an optimal experience on both desktop and mobile devices.
+Form Validation: Forms for adding events, attendees, and tasks are validated to ensure no empty fields or invalid data are submitted.
+
+This documentation provides a clear overview of the technologies used and how they contribute to the functionality and user experience of the Event Management Dashboard project.
